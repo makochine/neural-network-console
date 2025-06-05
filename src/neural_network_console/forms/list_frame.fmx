@@ -1,0 +1,178 @@
+object Fr_List: TFr_List
+  Size.Width = 742.000000000000000000
+  Size.Height = 506.000000000000000000
+  Size.PlatformDefault = False
+  object PB_List: TPaintBox
+    ClipChildren = True
+    Position.X = 9.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 480.000000000000000000
+    Size.Height = 281.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = PB_ListClick
+    OnDblClick = PB_ListDblClick
+    OnMouseDown = PB_ListMouseDown
+    OnMouseMove = PB_ListMouseMove
+    OnMouseUp = PB_ListMouseUp
+    OnMouseWheel = PB_ListMouseWheel
+    OnPaint = PB_ListPaint
+    object Ed_ListSearch: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      TextSettings.Font.Size = 16.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style]
+      OnChangeTracking = Ed_ListSearchChangeTracking
+      OnKeyDown = Ed_ListSearchKeyDown
+      object La_Search: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, Style]
+        Size.Width = 225.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = xFF8C8C8C
+        Text = 'Search Text Here'
+      end
+    end
+    object Bu_List: TButton
+      Position.X = 6.000000000000000000
+      Position.Y = 251.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'List'
+      OnKeyDown = Bu_ListKeyDown
+    end
+    object Ed_ListRename: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      TextSettings.Font.Size = 16.000000000000000000
+      Position.X = 7.000000000000000000
+      Position.Y = 130.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style]
+      OnKeyDown = Ed_ListRenameKeyDown
+      OnExit = Ed_ListRenameExit
+    end
+    object Bu_Menu: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 128.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 128.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'consolebmpbuttonstyle'
+      TabOrder = 0
+      Text = '    ACTION'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.HorzAlign = Leading
+      OnClick = Bu_MenuClick
+      object Im_Menu: TImage
+        MultiResBitmap.Height = 32
+        MultiResBitmap.Width = 32
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              00A2494441545847ED91810983301444334247E9288ED0911CA12374948EE206
+              FA4F3C089F98B4C644907B7060C237EF48821042881F795BBE96C7BA2A83B9C9
+              F25A5795403E6FC17709C85196FF5495182D3C88C995F07266B01CE269C155FA
+              03512CC5C7E267FF79BA247B25FCD5C64FC554CB49A9445339C93D87DFC3DCA9
+              7282125EE60339E69A816B4F8991E672922AD14D4EE212DDE504252E930B21C4
+              1D08610112385AC15417729E0000000049454E44AE426082}
+          end>
+        Align = Right
+        HitTest = False
+        Margins.Left = 16.000000000000000000
+        Margins.Right = 16.000000000000000000
+        Position.X = 96.000000000000000000
+        Size.Width = 16.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Sc_ListY: TScrollBar
+      Align = Right
+      Max = 10000.000000000000000000
+      SmallChange = 0.000000000000000000
+      Orientation = Vertical
+      Position.X = 464.000000000000000000
+      Position.Y = 49.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 232.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnChange = Sc_ListYChange
+      OnExit = Sc_ListYExit
+    end
+    object Im_Search: TImage
+      MultiResBitmap.Height = 96
+      MultiResBitmap.Width = 96
+      MultiResBitmap.LoadSize = 1
+      MultiResBitmap = <
+        item
+          Width = 48
+          Height = 48
+          PNG = {
+            89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+            87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0313494441546843ED98CB911A3110860157C1912D08007C008E4B06DE107004
+            C61178432084CDC0BB1198104C0670042E3B0950CB0D3880FF7FA6672C867948
+            1A6170D57C55941EC5A8BBD5ADD6A3525252527253AA525AD3EBF5862846D56A
+            F509E517BFF392D9E974FA8D72BA5EAFE741971BAC0D80E26328FD8CEA63D0A3
+            CD02C6BCC090576917C2D880C160D08502149E36DBBACC3001E3E572F92E6D2B
+            8C0CE8F7FB231454BEE977FC658BDF946152ABD5CE143A1E8F5D092F7E9BF4DD
+            78B55A4D83A639DA0648C8FC94A60F14F6504C0E87C3D4F3BC8FA0371D8E8162
+            82713A414F00C6F96E1B525A06C8CCFF0A5A116FFBFDFE594771954EA7F3D068
+            345E50FD16F4447CB5F144AE0112F3CC1C91FB8BCC58488247B7680F4DD7444D
+            CA54A0EC59CCBB509E700C8E254DD21459467C92321199A51FD2246F103C917A
+            61369BCDBCDD6E7F46957B09E9B65A2D8FFDD2CE25D303509E79DE07B3E331E6
+            A5E90C8EC9B1A579265387540330FB9C1575939A982E581D644CD5AB8F225B8B
+            2C0F30F3846C5DC47D1A4CC328B82784A8B233493500AEE4E61362BDD1E8205E
+            8864C4646792E581E8A88018E541ECAAC464681F5332177148FC78700D6C6524
+            1AC0DD52AA778F96076E014F0052CD24D1806BA44B53748F145A1EE09158AA57
+            C35646960133298DD29A2D311991EC3C520D88A5B5D13F58D8D1E66592B6B33C
+            A06E5ECD7ABDAEBD3B9A22171DF5B6A6BD7166DE077091E1A9D03F0FF1C0852D
+            7FE87A81D3B3989C394228BCA52D70B1717216A2D2BC39F95080DCA49CC23115
+            E589D1713DF746062F301ED56385930B0D49B895CD30FB460923378D4200E333
+            3A2952A0C46C211294E795D278DC5C036443391B9882E199579BCCC46FF86D4C
+            79F2BEDBED8CD7979367159D9092C5CA4C76F1ACA2B0C00DEDC92451681B40E4
+            7985CAE63E6C6167FD40FD41E3618BFF576F7E46461819405C3F2D326C908998
+            28AC8C3036204442CAEA7117BF89FA88C5F0B235C2DA801018E2E479DDD688C2
+            06B8C4C688BB3280981A7177061013237237B25B4025A92CAA5CF021F3FFC603
+            218A27E6C85A858F2F37814648B5A4A4E4824AE50F1033910A4F17F122000000
+            0049454E44AE426082}
+        end>
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Li_TopLine: TLine
+      Align = Top
+      HitTest = False
+      LineType = Bottom
+      Margins.Top = 48.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 480.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFD8D8D8
+    end
+  end
+end

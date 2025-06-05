@@ -1,0 +1,5 @@
+Instruction Manual (en),manual.pdf
+Instruction Manual (ja),manual_ja.pdf
+Users forum (en),https://groups.google.com/forum/#!forum/neural_network_console_users
+Users forum (ja),https://groups.google.com/forum/#!forum/neural_network_console_users_jp
+Lectures and tutorial videos,https://www.youtube.com/@NeuralNetworkConsole/playlists

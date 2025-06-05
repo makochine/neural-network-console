@@ -1,0 +1,36 @@
+File Name={SDCPATH}samples\sample_dataset\mnist\small_mnist_4or9_training.csv
+Name=small_mnist_4or9_training.csv
+Location={SDCPATH}samples\sample_dataset\mnist\
+DateTime=2015/06/19 10:00:42
+Description=Num Data : 1500\nNum Column : 2\nColumns : x:image, y:9
+
+File Name={SDCPATH}samples\sample_dataset\mnist\small_mnist_4or9_test.csv
+Name=small_mnist_4or9_test.csv
+Location={SDCPATH}samples\sample_dataset\mnist\
+DateTime=2015/06/19 10:00:47
+Description=Num Data : 491\nNum Column : 2\nColumns : x:image, y:9
+
+File Name={SDCPATH}samples\sample_dataset\mnist\mnist_training.csv
+Name=mnist_training.csv
+Location={SDCPATH}samples\sample_dataset\mnist\
+DateTime=2015/06/01 23:23:15
+Description=Num Data : 60000\nNum Column : 2\nColumns : x:image, y
+
+File Name={SDCPATH}samples\sample_dataset\mnist\mnist_test.csv
+Name=mnist_test.csv
+Location={SDCPATH}samples\sample_dataset\mnist\
+DateTime=2015/06/01 23:23:08
+Description=Num Data : 10000\nNum Column : 2\nColumns : x:image, y
+
+File Name={SDCPATH}samples\sample_dataset\iris_flower_dataset\iris_flower_dataset_training_delo.csv
+Name=iris_flower_dataset_training_delo.csv
+Location={SDCPATH}samples\sample_dataset\iris_flower_dataset\
+DateTime=2019/10/30 16:23:53
+Description=Num Data = 120\nNum Column = 5\nColumns = x__0:Sepal length, x__1:Sepal width, x__2:Petal length, x__3:Petal width, y:label
+
+File Name={SDCPATH}samples\sample_dataset\iris_flower_dataset\iris_flower_dataset_validation_delo.csv
+Name=iris_flower_dataset_validation_delo.csv
+Location={SDCPATH}samples\sample_dataset\iris_flower_dataset\
+DateTime=2019/10/30 16:16:44
+Description=Num Data = 30\nNum Column = 5\nColumns = x__0:Sepal length, x__1:Sepal width, x__2:Petal length, x__3:Petal width, y:label
+

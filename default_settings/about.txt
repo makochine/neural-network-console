@@ -1,0 +1,19 @@
+Copyright 2017, 2018, 2019, 2020, 2021 Sony Corporation.
+Copyright 2021, 2022, 2023, 2024, 2025 Sony Group Corporation.
+
+https://github.com/sony/neural_network_console
+
+
+Third-Party Licenses
+
+This application includes third-party libraries and resources.
+To find the license terms, click the link below.
+
+- Intel(TM) Math Kernel Library
+https://software.intel.com/en-us/license/intel-simplified-software-license
+
+- CUDA
+http://docs.nvidia.com/cuda/eula/#axzz4goCOwCUn
+
+- cuDNN software
+http://docs.nvidia.com/cuda/eula/index.html#axzz4oOC1XoEU

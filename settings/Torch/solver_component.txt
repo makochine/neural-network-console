@@ -1,0 +1,39 @@
+[Adam]
+reference=Kingma and Ba, Adam: A Method for Stochastic Optimization. https://arxiv.org/abs/1412.6980
+argument_name=adam_param
+num_param=5
+param_0=Alpha;alpha;0.001
+param_1=Beta1;beta1;0.9
+param_2=Beta2;beta2;0.999
+param_3=Epsilon;eps;1.0e-8
+param_4=Weight Decay;weight_decay;0.01
+default=1
+
+[AdamW]
+reference=Kingma and Ba, Adam: A Method for Stochastic Optimization. https://arxiv.org/abs/1412.6980
+argument_name=adam_param
+num_param=5
+param_0=Alpha;alpha;0.001
+param_1=Beta1;beta1;0.9
+param_2=Beta2;beta2;0.999
+param_3=Epsilon;eps;1.0e-8
+param_4=Weight Decay;weight_decay;0.01
+
+[Adadelta]
+reference=Matthew D. Zeiler. ADADELTA: An Adaptive Learning Rate Method. https://arxiv.org/abs/1212.5701
+argument_name=adadelta_param
+num_param=5
+param_0=LearningRate;lr;1.0
+param_1=Rho;rho;0.9
+param_2=Epsilon;eps;1.0e-6s
+param_3=Weight Decay;weight_decay;0.01
+
+[Adamax]
+reference=Kingma and Ba, Adam: A Method for Stochastic Optimization. https://arxiv.org/abs/1412.6980
+argument_name=adadelta_param
+num_param=5
+param_0=LearningRate;lr;0.002
+param_1=Beta1;beta1;0.9
+param_2=Beta2;beta2;0.999
+param_3=Epsilon;eps;1.0e-8s
+param_4=Weight Decay;weight_decay;0.0

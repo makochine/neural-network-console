@@ -1,0 +1,61 @@
+# Copyright 2025 Sony Group Corporation.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nnabla_ssh"
+description = "Use remote compute resource from NNabla"
+license = "Apache-2.0"
+requires-python = ">=3.7"
+keywords = [
+    "deep learning",
+    "artificial intelligence",
+    "machine learning",
+    "neural network"
+]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Operating System :: POSIX :: Linux'
+]
+dependencies = [
+    'boto3',
+    'certifi',
+    'nnabla',
+    'pythonnet;platform_system=="Windows"',
+    'python-certifi-win32;platform_system=="Windows"',
+    'pywin32;platform_system=="Windows"',
+    'paramiko',
+    'psutil',
+    'requests',
+    'scp',
+    'six',
+    'tqdm'
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "nnabla_ssh.version"}

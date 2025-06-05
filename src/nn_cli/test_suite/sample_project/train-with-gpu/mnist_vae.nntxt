@@ -1,0 +1,1508 @@
+global_config {
+  default_context {
+    array_class: "CudaCachedArray"
+    device_id: "0"
+    backends: "cudnn:float"
+    backends: "cuda:float"
+    backends: "cpu:float"
+  }
+}
+training_config {
+  max_epoch: 100
+  iter_per_epoch: 600
+  save_best: true
+  monitor_interval: 10
+}
+network {
+  name: "Main"
+  batch_size: 100
+  variable {
+    name: "Input"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "epsilon"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Input_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine/affine/W"
+    type: "Parameter"
+    shape: { dim: 784 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_2/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_2/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_3/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 50 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_3/affine/b"
+    type: "Parameter"
+    shape: { dim: 50 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "q_logvar/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 50 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "q_logvar/affine/b"
+    type: "Parameter"
+    shape: { dim: 50 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_5/affine/W"
+    type: "Parameter"
+    shape: { dim: 50 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_5/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_6/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_6/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_7/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 1 dim: 28 dim: 28 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_7/affine/b"
+    type: "Parameter"
+    shape: { dim: 1 dim: 28 dim: 28 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "GreaterEqualScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Affine_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "AddScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "MulScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "MulScalar_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Exp"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Sum_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  variable {
+    name: "Mul2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Add2_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Affine_5"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "PowScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "MulScalar_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "ELU_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Sum_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  variable {
+    name: "Affine_6"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_7"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "SigmoidCrossEntropy"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Sum"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  function {
+    name: "GreaterEqualScalar"
+    type: "GreaterEqualScalar"
+    input: "Input_2"
+    output: "GreaterEqualScalar"
+    greater_equal_scalar_param {
+      val: 0.5
+    }
+  }
+  function {
+    name: "Affine"
+    type: "Affine"
+    input: "Input"
+    input: "Affine/affine/W"
+    input: "Affine/affine/b"
+    output: "Affine"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU"
+    type: "ELU"
+    input: "Affine"
+    output: "ELU"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_2"
+    type: "Affine"
+    input: "ELU"
+    input: "Affine_2/affine/W"
+    input: "Affine_2/affine/b"
+    output: "Affine_2"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU_2"
+    type: "ELU"
+    input: "Affine_2"
+    output: "ELU_2"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_3"
+    type: "Affine"
+    input: "ELU_2"
+    input: "Affine_3/affine/W"
+    input: "Affine_3/affine/b"
+    output: "Affine_3"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Affine_4"
+    type: "Affine"
+    input: "ELU_2"
+    input: "q_logvar/affine/W"
+    input: "q_logvar/affine/b"
+    output: "Affine_4"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "AddScalar"
+    type: "AddScalar"
+    input: "Affine_4"
+    output: "AddScalar"
+    add_scalar_param {
+      val: 1
+    }
+  }
+  function {
+    name: "MulScalar"
+    type: "MulScalar"
+    input: "Affine_4"
+    output: "MulScalar"
+    mul_scalar_param {
+      val: 0.5
+    }
+  }
+  function {
+    name: "MulScalar_2"
+    type: "MulScalar"
+    input: "AddScalar"
+    output: "MulScalar_2"
+    mul_scalar_param {
+      val: -0.5
+    }
+  }
+  function {
+    name: "Exp"
+    type: "Exp"
+    input: "MulScalar"
+    output: "Exp"
+  }
+  function {
+    name: "Sum_2"
+    type: "Sum"
+    input: "MulScalar_2"
+    output: "Sum_2"
+    sum_param {
+      axes: 1
+      keep_dims: false
+    }
+  }
+  function {
+    name: "Mul2"
+    type: "Mul2"
+    input: "epsilon"
+    input: "Exp"
+    output: "Mul2"
+  }
+  function {
+    name: "Add2_3"
+    type: "Add2"
+    input: "Mul2"
+    input: "Affine_3"
+    output: "Add2_3"
+    add2_param {
+      inplace: True
+    }
+  }
+  function {
+    name: "Affine_5"
+    type: "Affine"
+    input: "Add2_3"
+    input: "Affine_5/affine/W"
+    input: "Affine_5/affine/b"
+    output: "Affine_5"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "PowScalar"
+    type: "PowScalar"
+    input: "Add2_3"
+    output: "PowScalar"
+    pow_scalar_param {
+      val: 2
+    }
+  }
+  function {
+    name: "MulScalar_3"
+    type: "MulScalar"
+    input: "PowScalar"
+    output: "MulScalar_3"
+    mul_scalar_param {
+      val: 0.5
+    }
+  }
+  function {
+    name: "ELU_3"
+    type: "ELU"
+    input: "Affine_5"
+    output: "ELU_3"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Sum_3"
+    type: "Sum"
+    input: "MulScalar_3"
+    output: "Sum_3"
+    sum_param {
+      axes: 1
+      keep_dims: false
+    }
+  }
+  function {
+    name: "Affine_6"
+    type: "Affine"
+    input: "ELU_3"
+    input: "Affine_6/affine/W"
+    input: "Affine_6/affine/b"
+    output: "Affine_6"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU_4"
+    type: "ELU"
+    input: "Affine_6"
+    output: "ELU_4"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_7"
+    type: "Affine"
+    input: "ELU_4"
+    input: "Affine_7/affine/W"
+    input: "Affine_7/affine/b"
+    output: "Affine_7"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "SigmoidCrossEntropy"
+    type: "SigmoidCrossEntropy"
+    input: "Affine_7"
+    input: "GreaterEqualScalar"
+    output: "SigmoidCrossEntropy"
+  }
+  function {
+    name: "Sum"
+    type: "Sum"
+    input: "SigmoidCrossEntropy"
+    output: "Sum"
+    sum_param {
+      axes: 2
+      axes: 3
+      keep_dims: false
+    }
+  }
+}
+network {
+  name: "MainValidation"
+  batch_size: 100
+  variable {
+    name: "Input"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "epsilon"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Input_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine/affine/W"
+    type: "Parameter"
+    shape: { dim: 784 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_2/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_2/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_3/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 50 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_3/affine/b"
+    type: "Parameter"
+    shape: { dim: 50 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "q_logvar/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 50 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "q_logvar/affine/b"
+    type: "Parameter"
+    shape: { dim: 50 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_5/affine/W"
+    type: "Parameter"
+    shape: { dim: 50 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_5/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_6/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_6/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_7/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 1 dim: 28 dim: 28 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_7/affine/b"
+    type: "Parameter"
+    shape: { dim: 1 dim: 28 dim: 28 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "GreaterEqualScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Affine_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "AddScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "MulScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "MulScalar_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Exp"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Sum_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  variable {
+    name: "Mul2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Add2_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Affine_5"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "PowScalar"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "MulScalar_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "ELU_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Sum_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  variable {
+    name: "Affine_6"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_7"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "SigmoidCrossEntropy"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Sum"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  function {
+    name: "GreaterEqualScalar"
+    type: "GreaterEqualScalar"
+    input: "Input_2"
+    output: "GreaterEqualScalar"
+    greater_equal_scalar_param {
+      val: 0.5
+    }
+  }
+  function {
+    name: "Affine"
+    type: "Affine"
+    input: "Input"
+    input: "Affine/affine/W"
+    input: "Affine/affine/b"
+    output: "Affine"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU"
+    type: "ELU"
+    input: "Affine"
+    output: "ELU"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_2"
+    type: "Affine"
+    input: "ELU"
+    input: "Affine_2/affine/W"
+    input: "Affine_2/affine/b"
+    output: "Affine_2"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU_2"
+    type: "ELU"
+    input: "Affine_2"
+    output: "ELU_2"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_3"
+    type: "Affine"
+    input: "ELU_2"
+    input: "Affine_3/affine/W"
+    input: "Affine_3/affine/b"
+    output: "Affine_3"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Affine_4"
+    type: "Affine"
+    input: "ELU_2"
+    input: "q_logvar/affine/W"
+    input: "q_logvar/affine/b"
+    output: "Affine_4"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "AddScalar"
+    type: "AddScalar"
+    input: "Affine_4"
+    output: "AddScalar"
+    add_scalar_param {
+      val: 1
+    }
+  }
+  function {
+    name: "MulScalar"
+    type: "MulScalar"
+    input: "Affine_4"
+    output: "MulScalar"
+    mul_scalar_param {
+      val: 0.5
+    }
+  }
+  function {
+    name: "MulScalar_2"
+    type: "MulScalar"
+    input: "AddScalar"
+    output: "MulScalar_2"
+    mul_scalar_param {
+      val: -0.5
+    }
+  }
+  function {
+    name: "Exp"
+    type: "Exp"
+    input: "MulScalar"
+    output: "Exp"
+  }
+  function {
+    name: "Sum_2"
+    type: "Sum"
+    input: "MulScalar_2"
+    output: "Sum_2"
+    sum_param {
+      axes: 1
+      keep_dims: false
+    }
+  }
+  function {
+    name: "Mul2"
+    type: "Mul2"
+    input: "epsilon"
+    input: "Exp"
+    output: "Mul2"
+  }
+  function {
+    name: "Add2_3"
+    type: "Add2"
+    input: "Mul2"
+    input: "Affine_3"
+    output: "Add2_3"
+    add2_param {
+      inplace: True
+    }
+  }
+  function {
+    name: "Affine_5"
+    type: "Affine"
+    input: "Add2_3"
+    input: "Affine_5/affine/W"
+    input: "Affine_5/affine/b"
+    output: "Affine_5"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "PowScalar"
+    type: "PowScalar"
+    input: "Add2_3"
+    output: "PowScalar"
+    pow_scalar_param {
+      val: 2
+    }
+  }
+  function {
+    name: "MulScalar_3"
+    type: "MulScalar"
+    input: "PowScalar"
+    output: "MulScalar_3"
+    mul_scalar_param {
+      val: 0.5
+    }
+  }
+  function {
+    name: "ELU_3"
+    type: "ELU"
+    input: "Affine_5"
+    output: "ELU_3"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Sum_3"
+    type: "Sum"
+    input: "MulScalar_3"
+    output: "Sum_3"
+    sum_param {
+      axes: 1
+      keep_dims: false
+    }
+  }
+  function {
+    name: "Affine_6"
+    type: "Affine"
+    input: "ELU_3"
+    input: "Affine_6/affine/W"
+    input: "Affine_6/affine/b"
+    output: "Affine_6"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU_4"
+    type: "ELU"
+    input: "Affine_6"
+    output: "ELU_4"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_7"
+    type: "Affine"
+    input: "ELU_4"
+    input: "Affine_7/affine/W"
+    input: "Affine_7/affine/b"
+    output: "Affine_7"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "SigmoidCrossEntropy"
+    type: "SigmoidCrossEntropy"
+    input: "Affine_7"
+    input: "GreaterEqualScalar"
+    output: "SigmoidCrossEntropy"
+  }
+  function {
+    name: "Sum"
+    type: "Sum"
+    input: "SigmoidCrossEntropy"
+    output: "Sum"
+    sum_param {
+      axes: 2
+      axes: 3
+      keep_dims: false
+    }
+  }
+}
+network {
+  name: "Runtime"
+  batch_size: 100
+  variable {
+    name: "Input"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine/affine/W"
+    type: "Parameter"
+    shape: { dim: 784 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_2/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_2/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_3/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 50 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_3/affine/b"
+    type: "Parameter"
+    shape: { dim: 50 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_5/affine/W"
+    type: "Parameter"
+    shape: { dim: 50 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_5/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_6/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 500 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_6/affine/b"
+    type: "Parameter"
+    shape: { dim: 500 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_7/affine/W"
+    type: "Parameter"
+    shape: { dim: 500 dim: 1 dim: 28 dim: 28 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_7/affine/b"
+    type: "Parameter"
+    shape: { dim: 1 dim: 28 dim: 28 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 50 }
+  }
+  variable {
+    name: "Affine_5"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_6"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "ELU_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 500 }
+  }
+  variable {
+    name: "Affine_7"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "y'"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  function {
+    name: "Affine"
+    type: "Affine"
+    input: "Input"
+    input: "Affine/affine/W"
+    input: "Affine/affine/b"
+    output: "Affine"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU"
+    type: "ELU"
+    input: "Affine"
+    output: "ELU"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_2"
+    type: "Affine"
+    input: "ELU"
+    input: "Affine_2/affine/W"
+    input: "Affine_2/affine/b"
+    output: "Affine_2"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU_2"
+    type: "ELU"
+    input: "Affine_2"
+    output: "ELU_2"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_3"
+    type: "Affine"
+    input: "ELU_2"
+    input: "Affine_3/affine/W"
+    input: "Affine_3/affine/b"
+    output: "Affine_3"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Affine_5"
+    type: "Affine"
+    input: "Affine_3"
+    input: "Affine_5/affine/W"
+    input: "Affine_5/affine/b"
+    output: "Affine_5"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU_3"
+    type: "ELU"
+    input: "Affine_5"
+    output: "ELU_3"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_6"
+    type: "Affine"
+    input: "ELU_3"
+    input: "Affine_6/affine/W"
+    input: "Affine_6/affine/b"
+    output: "Affine_6"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "ELU_4"
+    type: "ELU"
+    input: "Affine_6"
+    output: "ELU_4"
+    elu_param {
+      alpha: 1
+    }
+  }
+  function {
+    name: "Affine_7"
+    type: "Affine"
+    input: "ELU_4"
+    input: "Affine_7/affine/W"
+    input: "Affine_7/affine/b"
+    output: "Affine_7"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "y'"
+    type: "Sigmoid"
+    input: "Affine_7"
+    output: "y'"
+  }
+}
+dataset {
+  name: "Training"
+  uri: "../../sample_dataset/MNIST/mnist_training.csv"
+  cache_dir: "../../sample_dataset/MNIST/mnist_training.cache"
+  overwrite_cache: False
+  create_cache_explicitly: True
+  shuffle: true
+  no_image_normalization: False
+  batch_size: 100
+}
+dataset {
+  name: "Validation"
+  uri: "../../sample_dataset/MNIST/mnist_test.csv"
+  cache_dir: "../../sample_dataset/MNIST/mnist_test.cache"
+  overwrite_cache: False
+  create_cache_explicitly: True
+  shuffle: false
+  no_image_normalization: False
+  batch_size: 100
+}
+optimizer {
+  name: "Optimizer"
+  update_interval: 1
+  network_name: "Main"
+  dataset_name: "Training"
+  solver {
+    type: "Adam"
+    weight_decay: 0
+    lr_decay: 1
+    lr_decay_interval: 1
+    adam_param {
+      alpha: 0.0001
+      beta1: 0.9
+      beta2: 0.999
+      eps: 1e-08
+    }
+  }
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  generator_variable {
+    variable_name: "epsilon"
+    type: "Normal"
+    multiplier: 1
+  }
+  data_variable {
+    variable_name: "Input_2"
+    data_name: "x"
+  }
+  loss_variable {
+    variable_name: "Sum_2"
+  }
+  loss_variable {
+    variable_name: "Sum_3"
+  }
+  loss_variable {
+    variable_name: "Sum"
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "q_logvar/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "q_logvar/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_6/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_6/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_7/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_7/affine/b"
+    learning_rate_multiplier: 1
+  }
+}
+monitor {
+  name: "train_error"
+  network_name: "MainValidation"
+  dataset_name: "Training"
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  generator_variable {
+    variable_name: "epsilon"
+    type: "Normal"
+    multiplier: 1
+  }
+  data_variable {
+    variable_name: "Input_2"
+    data_name: "x"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "Sum_2"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "Sum_3"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "Sum"
+  }
+}
+monitor {
+  name: "valid_error"
+  network_name: "MainValidation"
+  dataset_name: "Validation"
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  generator_variable {
+    variable_name: "epsilon"
+    type: "Normal"
+    multiplier: 1
+  }
+  data_variable {
+    variable_name: "Input_2"
+    data_name: "x"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "Sum_2"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "Sum_3"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "Sum"
+  }
+}
+executor {
+  name: "Executor"
+  network_name: "Runtime"
+  num_evaluations: 1
+  repeat_evaluation_type: "mean"
+  need_back_propagation: false
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  output_variable {
+    variable_name: "y'"
+    data_name: "y'"
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_6/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_6/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_7/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_7/affine/b"
+  }
+}

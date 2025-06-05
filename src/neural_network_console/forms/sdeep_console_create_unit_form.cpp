@@ -1,0 +1,69 @@
+// Copyright 2018,2019,2020,2021 Sony Corporation.
+// Copyright 2021,2022,2023,2024,2025 Sony Group Corporation.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "sdeep_console_create_unit_form.h"
+#include "translation.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TFo_CreateUnit *Fo_CreateUnit;
+
+using namespace elfe;
+
+//---------------------------------------------------------------------------
+__fastcall TFo_CreateUnit::TFo_CreateUnit(TComponent* Owner)
+	: TForm(Owner), create_(false)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TFo_CreateUnit::Bu_CreateClick(TObject *Sender)
+{
+	if (Ed_NetworkName->Text == ""){
+		Ed_NetworkName->SetFocus();
+		ShowMessage(GetTranslatedText(Lang, "Network name is not entered."));
+		return;
+	}
+	create_ = true;
+    Close();
+}
+//---------------------------------------------------------------------------
+void __fastcall TFo_CreateUnit::FormKeyDown(TObject *Sender, WORD &Key, System::WideChar &KeyChar,
+          TShiftState Shift)
+{
+	if (Key == 27) {
+		ModalResult = mrCancel;
+		Close();
+	}
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TFo_CreateUnit::FormShow(TObject *Sender)
+{
+	SetupTranslation(Lang);
+	if (lang_ != "auto") {
+		Lang->AutoSelect = false;
+		Lang->Lang = lang_;
+	}
+    Ed_NetworkName->SetFocus();
+}
+//---------------------------------------------------------------------------
+

@@ -1,0 +1,473 @@
+File Name={SDCPATH}samples\sample_project\tutorial\basics\01_logistic_regression.sdcproj
+Name=01_logistic_regression.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\basics\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\basics\01_logistic_regression_torch.sdcproj
+Name=01_logistic_regression_torch.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\basics\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\basics\02_binary_cnn.sdcproj
+Name=02_binary_cnn.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\basics\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\basics\06_auto_encoder.sdcproj
+Name=06_auto_encoder.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\basics\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\basics\10_deep_mlp.sdcproj
+Name=10_deep_mlp.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\basics\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\basics\11_deconvolution.sdcproj
+Name=11_deconvolution.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\basics\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\basics\12_residual_learning.sdcproj
+Name=12_residual_learning.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\basics\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\classification\adult\adult.sdcproj
+Name=adult.sdcproj
+Location={SDCPATH}samples\sample_project\classification\adult\
+DateTime=2019/10/31 13:43:39
+Description=Dataset "Training": adult_data.csv    (32561 samples, 109 columns)\nDataset "Validation": adult_test.csv    (16281 samples, 109 columns)
+
+File Name={SDCPATH}samples\sample_project\classification\german_credit\german_credit.sdcproj
+Name=german_credit.sdcproj
+Location={SDCPATH}samples\sample_project\classification\german_credit\
+DateTime=2019/10/31 13:43:39
+Description=Dataset "Training": german_credit_data.csv    (800 samples, 62 columns)\nDataset "Validation": german_credit_test.csv    (200 samples, 62 columns)
+
+File Name={SDCPATH}samples\sample_project\classification\iris\iris.sdcproj
+Name=iris.sdcproj
+Location={SDCPATH}samples\sample_project\classification\iris\
+DateTime=2019/10/31 13:43:39
+Description=Dataset "Training": iris_flower_dataset_training_delo.csv    (120 samples, 5 columns)\nDataset "Validation": iris_flower_dataset_validation_delo.csv    (30 samples, 5 columns)
+
+File Name={SDCPATH}samples\sample_project\image_generation\mnist_dcgan.sdcproj
+Name=mnist_dcgan.sdcproj
+Location={SDCPATH}samples\sample_project\image_generation\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_generation\mnist_dcgan_with_label.sdcproj
+Name=mnist_dcgan_with_label.sdcproj
+Location={SDCPATH}samples\sample_project\image_generation\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_generation\mnist_vae.sdcproj
+Name=mnist_vae.sdcproj
+Location={SDCPATH}samples\sample_project\image_generation\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\gmlp.sdcproj
+Name=gmlp.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\mlp-mixer.sdcproj
+Name=mlp-mixer.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\repmlp.sdcproj
+Name=repmlp.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\resmlp.sdcproj
+Name=resmlp.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\mlp\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\resnet-110-deepmil.sdcproj
+Name=resnet-110-deepmil.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\resnet-110-mixup.sdcproj
+Name=resnet-110-mixup.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)\nDataset "Training2": cifar10_training.csv    (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\resnet-110.sdcproj
+Name=resnet-110.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\resnet-110-cutout.sdcproj
+Name=resnet-110-cutout.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR10\resnet\
+DateTime=2019/10/31 13:43:38
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\CIFAR100\resnet\resnet-110.sdcproj
+Name=resnet-110.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\CIFAR100\resnet\
+DateTime=2019/10/31 13:43:37
+Description=Dataset "Training": cifar100_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar100_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\FashionMNIST\LeNet.sdcproj
+Name=LeNet.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\FashionMNIST\
+DateTime=2019/10/31 13:43:36
+Description=
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\alexnet.sdcproj
+Name=alexnet.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\
+DateTime=2019/10/31 13:43:36
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\googlenet.sdcproj
+Name=googlenet.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\
+DateTime=2019/10/31 13:43:36
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\nin.sdcproj
+Name=nin.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\
+DateTime=2019/10/31 13:43:35
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\densenet\densenet-161.sdcproj
+Name=densenet-161.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\densenet\
+DateTime=2019/10/31 13:43:35
+Description=Dataset "Training":     (1281159 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\resnet-101.sdcproj
+Name=resnet-101.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\
+DateTime=2019/10/31 13:43:29
+Description=Dataset "Training":     (1281159 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\resnet-152.sdcproj
+Name=resnet-152.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\
+DateTime=2019/10/31 13:43:29
+Description=Dataset "Training":     (1281159 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\resnet-18.sdcproj
+Name=resnet-18.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\
+DateTime=2019/10/31 13:43:29
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\resnet-34.sdcproj
+Name=resnet-34.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\
+DateTime=2019/10/31 13:43:28
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\resnet-50.sdcproj
+Name=resnet-50.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\residual networks\
+DateTime=2019/10/31 13:43:28
+Description=Dataset "Training":     (1281159 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\resnext\resnext-101.sdcproj
+Name=resnext-101.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\resnext\
+DateTime=2019/10/31 13:43:28
+Description=Dataset "Training":     (1281159 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\shufflenet\shufflenet-0.5x.sdcproj
+Name=shufflenet-0.5x.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\shufflenet\
+DateTime=2019/10/31 13:43:27
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\shufflenet\shufflenet-2.0x.sdcproj
+Name=shufflenet-2.0x.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\shufflenet\
+DateTime=2019/10/31 13:43:27
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\shufflenet\shufflenet.sdcproj
+Name=shufflenet.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\shufflenet\
+DateTime=2019/10/31 13:43:26
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\squeezenet\squeezenet11.sdcproj
+Name=squeezenet11.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\squeezenet\
+DateTime=2019/10/31 13:43:26
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\vgg\vgg-11.sdcproj
+Name=vgg-11.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\vgg\
+DateTime=2019/10/31 13:43:26
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\vgg\vgg-13.sdcproj
+Name=vgg-13.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\vgg\
+DateTime=2019/10/31 13:43:26
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\vgg\vgg-16.sdcproj
+Name=vgg-16.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\ILSVRC2012\vgg\
+DateTime=2019/10/31 13:43:26
+Description=Dataset "Training":     (1281143 samples, 2 columns)\nDataset "Validation":     (50000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\MNIST\LeNet.sdcproj
+Name=LeNet.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\MNIST\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\image_recognition\MNIST\semi_supervised_learning_VAT.sdcproj
+Name=semi_supervised_learning_VAT.sdcproj
+Location={SDCPATH}samples\sample_project\image_recognition\MNIST\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Labeled": mnist_training_100.csv    (100 samples, 2 columns)\nDataset "Unlabeled": mnist_training_unlabeled.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\anomaly_detection\sin_wave_anomaly_detection.sdcproj
+Name=sin_wave_anomaly_detection.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\anomaly_detection\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": training_unsupervised.csv    (10000 samples, 2 columns)\nDataset "Validation": validation_labeled.csv    (1000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\binary_networks\binary_connect_mnist_LeNet.sdcproj
+Name=binary_connect_mnist_LeNet.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\binary_networks\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\binary_networks\binary_connect_mnist_MLP.sdcproj
+Name=binary_connect_mnist_MLP.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\binary_networks\
+DateTime=2019/10/31 13:43:25
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\binary_networks\binary_net_mnist_LeNet.sdcproj
+Name=binary_net_mnist_LeNet.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\binary_networks\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\binary_networks\binary_net_mnist_MLP.sdcproj
+Name=binary_net_mnist_MLP.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\binary_networks\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\binary_networks\binary_weight_mnist_MLP.sdcproj
+Name=binary_weight_mnist_MLP.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\binary_networks\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": mnist_training.csv    (60000 samples, 2 columns)\nDataset "Validation": mnist_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\explainable_dl\01_visualize_weight_of_feature.sdcproj
+Name=01_visualize_weight_of_feature.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\explainable_dl\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\explainable_dl\02_l1_regularization.sdcproj
+Name=02_l1_regularization.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\explainable_dl\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (499 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\explainable_dl\03_attention.sdcproj
+Name=03_attention.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\explainable_dl\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\explainable_dl\04_inference_result_at_each_layer.sdcproj
+Name=04_inference_result_at_each_layer.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\explainable_dl\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\explainable_dl\05_MCdropout.sdcproj
+Name=05_MCdropout.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\explainable_dl\
+DateTime=2020/11/19 19:45:25
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\image_generation\cyclegan_mnist_4and9.sdcproj
+Name=cyclegan_mnist_4and9.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\image_generation\
+DateTime=2020/11/19 19:45:25
+Description=Dataset "Training4": mnist_for_cyclegan_training_4.csv    (5842 samples, 1 columns)\nDataset "Training9": mnist_for_cyclegan_training_9.csv    (5949 samples, 1 columns)\nDataset "Validation": mnist_for_cyclegan_test.csv    (250 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\image_signal_processing\super_resolution.sdcproj
+Name=super_resolution.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\image_signal_processing\
+DateTime=2020/11/19 19:45:25
+Description=Dataset "Training": flower_food_sr_train.csv    (380 samples, 2 columns)\nDataset "Validation": flower_food_sr_test.csv    (20 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\NLP\20newsgroups_classification.sdcproj
+Name=20newsgroups_classification.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\NLP\
+DateTime=2020/11/19 19:45:25
+Description=Dataset "Training": 20newsgroups_train.csv    (11314 samples, 258 columns)\nDataset "Validation": 20newsgroups_test.csv    (7532 samples, 258 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\NLP\20newsgroups_lstm_language_model.sdcproj
+Name=20newsgroups_lstm_language_model.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\NLP\
+DateTime=2020/11/19 19:45:25
+Description=Dataset "Training": 20newsgroups_train.csv    (11314 samples, 258 columns)\nDataset "Validation": 20newsgroups_test.csv    (7532 samples, 258 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\NLP\20newsgroups_transformer_language_model.sdcproj
+Name=20newsgroups_transformer_language_model.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\NLP\
+DateTime=2020/11/19 19:45:25
+Description=Dataset "Training": 20newsgroups_train.csv    (11314 samples, 258 columns)\nDataset "Validation": 20newsgroups_test.csv    (7532 samples, 258 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\NLP\20newsgroups_word_embedding.sdcproj
+Name=20newsgroups_word_embedding.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\NLP\
+DateTime=2020/11/19 19:45:25
+Description=Dataset "Training": 20newsgroups_train.csv    (11314 samples, 258 columns)\nDataset "Validation": 20newsgroups_test.csv    (7532 samples, 258 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\object_detection\synthetic_image_object_detection.sdcproj
+Name=synthetic_image_object_detection.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\object_detection\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": training.csv    (90000 samples, 2 columns)\nDataset "Validation": validation.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\object_detection\synthetic_image_object_detection_centernet.sdcproj
+Name=synthetic_image_object_detection_centernet.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\object_detection\
+DateTime=2019/10/31 13:43:24
+Description=Dataset "Training": training.csv    (90000 samples, 2 columns)\nDataset "Validation": validation.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\bidirectional_elman_net.sdcproj
+Name=bidirectional_elman_net.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\
+DateTime=2019/10/31 13:43:23
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\elman_net.sdcproj
+Name=elman_net.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\
+DateTime=2019/10/31 13:43:23
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\elman_net_with_attention.sdcproj
+Name=elman_net_with_attention.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\
+DateTime=2019/10/31 13:43:23
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\gated_recurrent_unit(GRU).sdcproj
+Name=gated_recurrent_unit(GRU).sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\
+DateTime=2019/10/31 13:43:23
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\long_short_term_memory(LSTM).sdcproj
+Name=long_short_term_memory(LSTM).sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\
+DateTime=2019/10/31 13:43:23
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\LSTM_auto_encoder.sdcproj
+Name=LSTM_auto_encoder.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\
+DateTime=2019/10/31 13:43:22
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\stacked_GRU.sdcproj
+Name=stacked_GRU.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\recurrent_neural_networks\
+DateTime=2019/10/31 13:43:22
+Description=Dataset "Training": small_mnist_4or9_training.csv    (1500 samples, 2 columns)\nDataset "Validation": small_mnist_4or9_test.csv    (500 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\binary_semantic_segmentation.sdcproj
+Name=binary_semantic_segmentation.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\
+DateTime=2019/10/31 13:43:21
+Description=Dataset "Training": train40000.csv    (40000 samples, 2 columns)\nDataset "Validation": validation.csv    (1000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\DeepLabV3plus.sdcproj
+Name=DeepLabV3plus.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\
+DateTime=2019/10/31 13:43:21
+Description=Dataset "Training": train40000.csv    (40000 samples, 2 columns)\nDataset "Validation": validation.csv    (1000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\FCN-VGG16.sdcproj
+Name=FCN-VGG16.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\
+DateTime=2019/10/31 13:43:21
+Description=Dataset "Training": train40000.csv    (40000 samples, 2 columns)\nDataset "Validation": validation.csv    (1000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\PSPNet-ResNet50.sdcproj
+Name=PSPNet-ResNet50.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\
+DateTime=2019/10/31 13:43:21
+Description=Dataset "Training": train40000.csv    (40000 samples, 2 columns)\nDataset "Validation": validation.csv    (1000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\PSPNet-ResNet50_Remodeling.sdcproj
+Name=PSPNet-ResNet50_Remodeling.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\
+DateTime=2019/10/31 13:43:21
+Description=Dataset "Training": train40000.csv    (40000 samples, 2 columns)\nDataset "Validation": validation.csv    (1000 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\unetlike_125px.sdcproj
+Name=unetlike_125px.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\
+DateTime=2019/10/31 13:43:21
+Description=Dataset "Training": pascal_voc_2012_seg_train_125px.csv    (1464 samples, 2 columns)\nDataset "Validation": pascal_voc_2012_seg_val_125px.csv    (1449 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\unetlike_125px_person.sdcproj
+Name=unetlike_125px_person.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\semantic_segmentation\
+DateTime=2019/10/31 13:43:16
+Description=Dataset "Training": pascal_voc_2012_seg_train_125px.csv    (1464 samples, 2 columns)\nDataset "Validation": pascal_voc_2012_seg_val_125px.csv    (1449 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\sound_signal_processing\noise_reduction.sdcproj
+Name=noise_reduction.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\sound_signal_processing\
+DateTime=2019/10/31 13:43:16
+Description=Dataset "Training": keyboard_sound_nr_train.csv    (395 samples, 2 columns)\nDataset "Validation": keyboard_sound_nr_test.csv    (20 samples, 2 columns)
+
+File Name={SDCPATH}samples\sample_project\tutorial\wav_classification\wav_keyboard_sound.sdcproj
+Name=wav_keyboard_sound.sdcproj
+Location={SDCPATH}samples\sample_project\tutorial\wav_classification\
+DateTime=2019/10/31 13:43:16
+Description=Dataset "Training": wav_keyboard_sound_train.csv    (315 samples, 2 columns)\nDataset "Validation": wav_keyboard_sound_test.csv    (100 samples, 2 columns)
+
+File Name={SDCPATH}samples/sample_project/xai/resnet110-attention-branch-network.sdcproj
+Name=resnet110-attention-branch-network.sdcproj
+Location={SDCPATH}samples/sample_project/xai/
+DateTime=2022/04/01 00:00:00
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
+
+File Name={SDCPATH}samples/sample_project/xai/resnet56-tracin.sdcproj
+Name=resnet56-tracin.sdcproj
+Location={SDCPATH}samples/sample_project/xai/
+DateTime=2022/04/01 00:00:00
+Description=Dataset "Training": cifar10_training.csv    (50000 samples, 2 columns)\nDataset "Validation": cifar10_test.csv    (10000 samples, 2 columns)
