@@ -207,8 +207,9 @@ class TransformerFunction:
                         elif 'Float' in arg_type:
                             arg_value = list(map(float, arg_value))
                     pipe_args[arg_name] = arg_value
+                model = pipe_args.pop('model', None)
                 self.args = pipe_args
-                pipe = pipeline(pipeline_type, device=0 if torch.cuda.is_available() else -1)
+                pipe = pipeline(pipeline_type, model = model, device=0 if torch.cuda.is_available() else -1)
                 self.function = lambda *args, **kwargs: flatten_dict_list(pipe(*args, **kwargs))
 
     def execute(self, *args, **kwargs):

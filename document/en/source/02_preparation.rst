@@ -18,7 +18,7 @@ If you want to install a new version of |Console| (update it), the new version m
 
 https://www.microsoft.com/en-us/download/details.aspx?id=52685
 
-3. If you are using a CUDA-enabled NVIDIA GPU with a Kepler architecture or later and want to actually use the GPU, update the GPU driver to the latest version.
+3. If you are using a CUDA-enabled NVIDIA GPU with a Maxwell architecture or later and want to actually use the GPU, update the GPU driver to the latest version.
 
 **Notes**
 
@@ -74,7 +74,7 @@ If you cannot log in correctly even after retrying, click the Get token for logi
 GPU environment setup
 ---------------------
 
-If you are using a CUDA-enabled NVIDIA GPU with Kepler architecture or later, the learning speed can be drastically improved by performing GPU environment setup, which is explained later.
+If you are using a CUDA-enabled NVIDIA GPU with Maxwell architecture or later, the learning speed can be drastically improved by performing GPU environment setup, which is explained later.
 
 **Step 1. Enabling the GPU usage in setup window**
 

@@ -67,7 +67,8 @@ COPY build-tools\patch\download.py %NNCDIR%\libs\Python\Lib\site-packages\nnabla
 REM Other setup
 XCOPY "default_settings\*.*" %NNCDIR%\settings\ /E /Y /D /Q
 COPY default_settings\nnabla.conf %NNCDIR%\libs\Python\Lib\site-packages\nnabla\
-COPY doc_files\*.* %NNCDIR%\
+COPY document\manual-en.pdf %NNCDIR%\manual.pdf
+COPY document\manual.pdf %NNCDIR%\manual_ja.pdf
 COPY neural_network_console.exe %NNCDIR%\neural_network_console.exe
 
 REM cleanup

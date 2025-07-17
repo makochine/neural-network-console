@@ -1,4 +1,4 @@
-// Copyright 2017,2018,2019,2020,2021 Sony Corporation.
+﻿// Copyright 2017,2018,2019,2020,2021 Sony Corporation.
 // Copyright 2021,2022,2023,2024,2025 Sony Group Corporation.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -1709,6 +1709,8 @@ int TFo_Main::OpenProject(UnicodeString file_name, int preset_project)
 	}
 
     RefreshRunMenu();
+
+	InstallPackages();
 
 	return true;
 }
@@ -3879,20 +3881,13 @@ void __fastcall TFo_Main::Ti_AnimationTimer(TObject *Sender)
 
 	if (startup_sqeuence == 2 && Sender == Ti_Animation){
 		startup_sqeuence = 3;
-		InstallPackages();
+		RefreshPlugins();
 		startup_sqeuence = 4;
 		return;
 	}
 
-	if (startup_sqeuence == 4 && Sender == Ti_Animation){
+	if (startup_sqeuence == 4 && Sender == Ti_Animation && !nn_document_.GetLocked()){
 		startup_sqeuence = 5;
-		RefreshPlugins();
-		startup_sqeuence = 6;
-		return;
-	}
-
-	if (startup_sqeuence == 6 && Sender == Ti_Animation && !nn_document_.GetLocked()){
-		startup_sqeuence = 7;
 		if (ParamCount() > 0){
 			for (int ip = 1 ; ip <= ParamCount() ; ip++){
 				if (ParamStr(ip).LowerCase().Pos(".sdcproj")){
@@ -3905,7 +3900,7 @@ void __fastcall TFo_Main::Ti_AnimationTimer(TObject *Sender)
 				}
 			}
 		}
-		startup_sqeuence = 8;
+		startup_sqeuence = 6;
 		return;
 	}
 	if (setup_request_) {
@@ -17466,6 +17461,10 @@ int TFo_Main::ExecutePlugin(const NNCPlugin &plugin)
 //---------------------------------------------------------------------------
 void TFo_Main::InstallPackages()
 {
+	if (nn_document_.GetSDeepEngineType() != SDeepEngineType::Torch) {
+		return;
+	}
+
 	AnsiString installed_list_file_name = ExtractFilePath(ParamStr(0)) + "settings\\install_pkg_list.txt";
 	if (FileExists(installed_list_file_name)) {
 		return;
@@ -18865,6 +18864,8 @@ void __fastcall TFo_Main::Bu_NewProjectTransformersClick(TObject *Sender)
 
 void __fastcall TFo_Main::Bu_NewProjectTorchClick(TObject *Sender)
 {
+	InstallPackages();
+
 	Log(FString("new project for torch"));
 	SetActivity(SDeepConsoleActivity::Default);
 	Bu_NetworkTabClick(this);

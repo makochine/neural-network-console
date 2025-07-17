@@ -18,7 +18,7 @@ Neural Network Consoleはパスに日本語などの2バイト文字が含まれ
 
 https://www.microsoft.com/ja-jp/download/details.aspx?id=53587
 
-3. NVIDIA製、Keplerアーキテクチャ以降のCUDA対応GPUをお使いの場合で、GPUを利用される場合は、GPUのドライバを最新のものに更新します。
+3. NVIDIA製、Maxwellアーキテクチャ以降のCUDA対応GPUをお使いの場合で、GPUを利用される場合は、GPUのドライバを最新のものに更新します。
 
 **ご注意**
 
@@ -74,7 +74,7 @@ GPUを利用しない場合のセットアップは以上です。NVIDIA製のCU
 GPU環境のセットアップ
 ---------------------
 
-NVIDIA製、Keplerアーキテクチャ以降のCUDA対応GPUをお使いの場合、この後解説するGPU環境のセットアップを行うことで学習速度を劇的に向上することができます。
+NVIDIA製、Maxwellアーキテクチャ以降のCUDA対応GPUをお使いの場合、この後解説するGPU環境のセットアップを行うことで学習速度を劇的に向上することができます。
 
 **Step 1. 設定画面でGPU使用の設定を行う**
 
