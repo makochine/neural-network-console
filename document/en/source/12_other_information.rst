@@ -224,7 +224,7 @@ Version update history
 
     - Bug fix where training could not be performed using GPU
 
-- 2025/07 Version 3.40
+- 2025/07/17 Version 3.40
 
     - Released as open source version
     - Bug fix

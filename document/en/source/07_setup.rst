@@ -75,26 +75,4 @@ Viewing the |Console| version and related information
 
 Click the About tab.
 
-Using the account window
-------------------------
 
-Retrying login on failed login
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Click the Retry button.
-
-Logging out from the logged-in |Console| service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Click the Logout button.
-
-Selectiong the tenant when executing neural network training in the |Console| cloud version
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Select the tenant in.the Tenant drop-down list box.
-
-**Reference**
-
-The tenant setting is only valid if you are participating in a tenant with |Console| cloud version.
-
-If you select None or Personal, neural network training will be executed in personal account without using tenant.

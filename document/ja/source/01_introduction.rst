@@ -13,4 +13,4 @@
 
 最新の |Console| は以下のWebサイトから取得可能です。
 
-https://dl.sony.com/
+https://github.com/sony/neural-network-console

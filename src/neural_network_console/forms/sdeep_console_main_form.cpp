@@ -16450,9 +16450,11 @@ void __fastcall TFo_Main::Bu_HelpClick(TObject *Sender)
 		UnicodeString lang_u = settings_.GetLanguage() == "auto" ? default_lang_ : UnicodeString(settings_.GetLanguage().PChar());
 		FString lang;
 		if (lang_u == "ja") {
-            lang = FString("-ja");
+            lang = FString("ja");
+		}else {
+			lang = FString("en");
 		}
-		OpenFile((FString("https://support.dl.sony.com/docs") + lang + FString("/layer_reference/#") + layer->GetType()).PChar());
+		OpenFile((FString("https://github.com/sony/neural-network-console/blob/main/document/") + lang + FString("/source/08_layer_reference.rst#") + layer->GetType()).PChar());
 	}
 }
 //---------------------------------------------------------------------------

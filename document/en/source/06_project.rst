@@ -87,59 +87,6 @@ Or, press F5 on the keyboard.
 
 A training task with the current settings is scheduled on the Training Results tab. The scheduled training task is executed as soon as the current training session is completed.
 
-Executing neural network training on the |Console| Cloud version (beta)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. On the EDIT tab, click Local Processor under the controller, and select the processor that can be used with the |Console| Cloud version.
-
-2. If you selected a processor that is available in more than single node, select the number of nodes in the drop-down list box at the right of the processor.
-
-3. Click Run on the controller.
-
-The project and dataset are uploaded to the |Console| Cloud version, and training starts on the Cloud version. If there is already a dataset that has been uploaded to the |Console| Cloud version and the content has not been changed after uploading, training is performed using the uploaded dataset.
-
-The current project and dataset are uploaded to the |Console| Cloud version according to the following naming convention.
-
-Project name: NNCW-(the project file name without the extension)
-
-Dataset name: NNCW-(the dataset file name without the extension)
-
-On the |Console| Cloud version, you can train using up to 10 GB of storage and up to 10 hours of CPU time for free. The usage time does not include the time you spend operating |Console|, the time to upload datasets, or the time until the actual training starts. It only includes the time needed to perform neural network training using the specified processor in units of seconds.
-
-When a dataset needs to be uploaded, such as when the dataset has been updated, it may take a long time to complete the upload before training on the Cloud version begins. You can view the progress of the dataset upload on the Dataset window of the |Console| Cloud version.
-
-https://dl.sony.com/console/#/dataset
-
-To perform training with a paid GPU or to use more than 10 GB of storage, you need to register a credit card in Service Settings of the |Console| Cloud version.
-
-https://dl.sony.com/console/#/serviceSettings
-
-For details on usage charges, see the following page.
-
-https://dl.sony.com/cloud/price_jp.html
-
-The training results obtained by using the |Console| Cloud version are saved both to the local PC and the Cloud version. To view the training results on the Cloud version, from Project, open the uploaded project.
-
-https://dl.sony.com/console/#/project
-
-**Notes**
-
-If you stop training on the |Console| Windows version, such as by closing the application, while training is in progress on the |Console| Cloud version, the training on the Cloud version will also stop.
-
-If the |Console| Windows version is forcibly terminated while training is in progress on the |Console| Cloud version, the training on the Cloud version will continue without stopping. To stop the training on the Cloud version, from Project of the Cloud version, open the uploaded project, and stop the job.
-
-https://dl.sony.com/console/#/project
-
-**Notes**
-
-Since training using the Cloud version requires a certain amount of time before training can be started, training on the Cloud version is suited to medium-scale training that requires several hours or more to complete the training. Small sample projects may require more time to complete than on local machines.
-
-**Notes**
-
-Note that the service content of the |Console| Cloud version is subject to change or termination without notice. For the latest service conditions, see the |Console| website.
-
-https://dl.sony.com/
-
 Viewing the training progress and past training results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

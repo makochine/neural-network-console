@@ -426,9 +426,9 @@ def references(args, config, report):
     report.html.append('<ul>')
 
     report.html.append(
-        '<li>Sony Corporation. Neural Network Console : Not just train and evaluate. You can design neural networks with fast and intuitive GUI. https://dl.sony.com/</li>')
+        '<li>Sony Corporation. Neural Network Console : Not just train and evaluate. You can design neural networks with fast and intuitive GUI. https://github.com/sony/neural-network-console</li>')
 
-    report.html.append('<li>Sony Corporation. Neural Network Libraries : An open source software to make research, development and implementation of neural network more efficient. https://nnabla.org/</li>')
+    report.html.append('<li>Sony Corporation. Neural Network Libraries : An open source software to make research, development and implementation of neural network more efficient. https://github.com/sony/nnabla</li>')
 
     num_reference = int(config['Reference']['NumReference'])
     for i in range(num_reference):

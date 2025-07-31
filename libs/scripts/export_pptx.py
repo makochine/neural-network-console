@@ -506,12 +506,12 @@ def references(args, config, prs):
 
     p = text_frame.paragraphs[0]
     run = p.add_run()
-    run.text = 'Sony Corporation. Neural Network Console : Not just train and evaluate. You can design neural networks with fast and intuitive GUI. https://dl.sony.com/'
+    run.text = 'Sony Corporation. Neural Network Console : Not just train and evaluate. You can design neural networks with fast and intuitive GUI. https://github.com/sony/neural-network-console'
     run.font.size = Pt(16)
 
     p = text_frame.add_paragraph()
     run = p.add_run()
-    run.text = 'Sony Corporation. Neural Network Libraries : An open source software to make research, development and implementation of neural network more efficient. https://nnabla.org/'
+    run.text = 'Sony Corporation. Neural Network Libraries : An open source software to make research, development and implementation of neural network more efficient. https://github.com/sony/nnabla'
     run.font.size = Pt(16)
 
     num_reference = int(config['Reference']['NumReference'])

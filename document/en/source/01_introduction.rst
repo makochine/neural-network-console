@@ -15,4 +15,4 @@ What is |Console| ?
 
 The latest version of |Console| can be obtained from the following website.
 
-https://dl.sony.com/
+https://github.com/sony/neural-network-console

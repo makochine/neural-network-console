@@ -186,19 +186,3 @@ The dataset you remove is only removed from the dataset management window, not f
 
 A dataset you removed will reappear in the dataset management window if you open it again from Open Dataset.
 
-Uploading a dataset to the |Console| Cloud
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. From the datasets shown in the dataset management window, click the dataset you want to upload.
-
-Or, use the up and down arrow keys to select the dataset.
-
-2. In the dataset preview at the right side of the window, click Upload Dataset. A Upload Dataset dialog box appears.
-
-.. image:: figures/image30.png
-   :align: center
-
-3. Copy the token displayed in the upload window of the |Console| Cloud, and click Paste to paste it in the Token box.
-
-4. Click Upload.
-
