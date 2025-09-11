@@ -218,3 +218,6 @@ NVIDIA、CUDAは、米国NVIDIA Corporation の米国およびその国の国に
     - オープンソース版としてリリース
     - バグ、不具合修正
 
+- 2025/09 Version 3.50
+
+    - Neural Network Libraries - Examplesの削除

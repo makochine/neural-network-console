@@ -45,7 +45,6 @@ You need following packages for building software:
 
 First, please clone or download the following repositories:
 - sony/neural_network_console
-- sony/ai-research-code
 - sony/nnabla-examples
 - sony/nnc-plugin
 - sony/nnabla-nas (release/console_v2.5)
@@ -53,7 +52,6 @@ First, please clone or download the following repositories:
 ```cmd copy
 git clone https://github.com/sony/neural_network_console
 cd neural_network_console
-git clone https://github.com/sony/ai-research-code
 git clone https://github.com/sony/nnabla-examples
 git clone https://github.com/sony/nnc-plugin
 git clone -b release/console_v2.5 https://github.com/sony/nnabla-nas

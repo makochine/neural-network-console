@@ -1024,12 +1024,14 @@ void TFo_Main::RefreshListSettings()
 			list_item.SetOriginalIndex(0);
 			list_item.AddAttribute(FString("Name"), GetTranslatedFString("AI Solutions"));
 		}
+		/*
 		{
 			ListItem &list_item = items.Add();
 			list_item.SetRenamable(false);
 			list_item.SetOriginalIndex(0);
 			list_item.AddAttribute(FString("Name"), GetTranslatedFString("Neural Network Libraries - Examples"));
 		}
+		*/
 
 		const FStringList link_collection = settings_.GetLinkCollection();
 		for (int i = 0 ; i < link_collection.GetSize() ; i++){
@@ -7789,6 +7791,7 @@ void TFo_Main::BrowserItemChanged(int index)
 		RefreshListSettings();
 		Fr_AISolutions->Repaint();
 		break;
+	/*
 	case 3://NNablaExamples
 		RefreshNNablaExamplesList();
 		Fr_NNablaExamples->Visible = true;
@@ -7796,9 +7799,10 @@ void TFo_Main::BrowserItemChanged(int index)
 		RefreshListSettings();
 		Fr_NNablaExamples->Repaint();
 		break;
+	*/
 	default:
 		{
-			index -= 4;
+			index -= 3;
 			const FStringList link_collection = settings_.GetLinkCollection();
 			if (index >= 0 && index < link_collection.GetSize()){
 				FString s = link_collection.GetAt(index);

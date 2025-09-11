@@ -85,7 +85,7 @@
         <ILINK_MapFileType>DetailedSegments</ILINK_MapFileType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
-        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileDescription=;FileVersion=3.4.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.4.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileDescription=;FileVersion=3.5.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.5.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>1041</VerInfo_Locale>
         <Multithreaded>true</Multithreaded>
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
@@ -135,7 +135,7 @@
         <UWP_CppLogo150>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_150.png</UWP_CppLogo150>
         <VerInfo_MajorVer>3</VerInfo_MajorVer>
         <VerInfo_MinorVer>0</VerInfo_MinorVer>
-        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileDescription=;FileVersion=3.4.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.4.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileDescription=;FileVersion=3.5.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.5.0;Comments=</VerInfo_Keys>
         <AppDPIAwarenessMode>none</AppDPIAwarenessMode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
@@ -172,7 +172,7 @@
         <BCC_MonitorInlinePtrAccess>true</BCC_MonitorInlinePtrAccess>
         <LinkPackageStatics>rtl.lib;fmx.lib;xmlrtl.lib;IndySystem.lib;IndyProtocols.lib;IndyCore.lib;vcl.lib</LinkPackageStatics>
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
-        <VerInfo_Keys>CompanyName=;FileVersion=3.4.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=3.4.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileVersion=3.5.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=3.5.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BT_BuildType>Debug</BT_BuildType>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
@@ -189,7 +189,7 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
         <BT_BuildType>Debug</BT_BuildType>
-        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileDescription=;FileVersion=3.4.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.4.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileDescription=;FileVersion=3.5.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.5.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <BCC_SourceDebuggingOn>false</BCC_SourceDebuggingOn>
@@ -207,7 +207,7 @@
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
-        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileVersion=3.4.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.4.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Sony Group Corporation;FileVersion=3.5.0.0;InternalName=;LegalCopyright=Sony Group Corporation;LegalTrademarks=;OriginalFilename=;ProductName=Neural Network Console;ProductVersion=3.5.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName)</VerInfo_Keys>
         <ILINK_StackReserveSize>0x01000000</ILINK_StackReserveSize>
         <Icon_MainIcon>..\..\images\v110\favicon\favicon.ico</Icon_MainIcon>
         <FinalOutputDir>..\..</FinalOutputDir>

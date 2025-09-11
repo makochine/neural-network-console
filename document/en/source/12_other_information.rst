@@ -166,6 +166,7 @@ Version update history
     - Plugin UI improvements
     - Bug fix
 
+
 - 2022/06/01 Version 2.50
 
     - Addition of CPU / GPU usage rate display function
@@ -224,8 +225,12 @@ Version update history
 
     - Bug fix where training could not be performed using GPU
 
+
 - 2025/07/17 Version 3.40
 
     - Released as open source version
     - Bug fix
 
+
+- 2025/09 Version 3.50
+    - Removed Neural Network Libraries - Examples

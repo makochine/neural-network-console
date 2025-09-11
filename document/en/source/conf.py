@@ -38,7 +38,7 @@ rst_prolog= u"""
 """
 copyright = '2025, Sony Group Corporation'
 author = 'Sony Group Corporation'
-version = '3.40'
+version = '3.50'
 release = version
 
 # -- General configuration ---------------------------------------------------
